@@ -16,12 +16,15 @@ body, html {
     width: 100vw;
 }
 main {
-    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
 }
 #login {
-    position: absolute;
+  
     background-color: white;
     width: 260px;
     height: 515px;
@@ -32,7 +35,7 @@ main {
     overflow: hidden;
     transition: width 0.3s, height 0.3s ;
     transition-timing-function: ease;
-    transform: translate(-50%, -50%);
+    
 }
 #login > #imagem {
     background: #5f2c82 url(../imagens/pexels-mitchel3uo-7013464.jpg) ;
